@@ -4,13 +4,20 @@
         <meta charset="UTF-8">
         <title>gamegame</title>
         <style>
-      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
-      .h1{
-          font-size:40px; font-family: 'Noto Sans KR', sans-serif;
-      }
+        body{
+            background-color:gray;
+        }
+            @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Noto+Sans+KR&display=swap');
+            h1{
+                font-size:40px; font-family: 'Nanum Gothic Coding', monospace; font-family: 'Noto Sans KR', sans-serif; text-align:center;
+            }
+            h2{
+                font-size:30px; font-family: 'Nanum Gothic Coding', monospace; font-family: 'Noto Sans KR', sans-serif;
+            }
         </style>
     </head>
     <body> 
+
 <?php
     $item_list = array("leg_item1", "leg_item2", "leg_item3", "leg_item4", "leg_item5", "leg_item6", "leg_item7", "leg_item8",
                         "u_item1", "u_item2", "u_item3", "u_item4", "u_item5", "u_item6", "u_item7", "u_item8",
