@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--파일선택-->
+    <form>
+        <input type="file" name="file_upload" accept="image/*">
+    </form>
+
+    <br><br>
+    <!--선택 입력 select요소 - 옵션이 드롭다운 리스트로 되어 있다-->
+    <select name="fruit">
+        <option value="orange">귤</option>
+        <option value="peach" selected>복숭아</option> <!--selected를 이용하여 처음에 미리 선택되는 요소 지정-->
+        <option value="strawberry">딸기</option>
+        <option value="apple">사과</option>
+    </select>
+
+    <br><br>
+    <!--textarea요소 - 문장입력-->
+    <form>
+        <textarea name="message" id="" cols="30" rows="10">적으쇼</textarea>
+    </form>
+
+    <br><br>
+    <button type="button" onclick="alert('버튼 눌렀슈?')">버튼 클릭해보쇼</button>
+
+    <br><br>
+    <p>어릴 적 자신의 별명을 적어주세요.</p>
+    <form>
+    <input type="text" name="nickname" value="별명">
+    <input type="submit" value="전송">
+    </form>
+    <p>별명을 적으신 후에 전송 버튼 눌러보삼</p>
+
+    <br><br>
+    <!--value속성 이용한 초기값 설정 -->
+    <form>
+        이름: <br><input type="text" name="username"> <br>
+        학번: <br><input type="text" name="number"> <br>
+        학과: <br><input type="text" name="major" value="컴퓨터공학과"> <br>
+        <br><br><input type="submit" value="전송">
+    </form>
+    <br><br>
+    
+    <!--maxlength을 이용한 최대 길이 설정-->
+    <form>
+        이름: (이름은 10자까지만 가능합니다) <br>
+        <input type="text" name="username" value="홍길동" maxlength="10"> <br>
+        학번: <br> <input type="text" name="student_id"><br>
+        <input type="submit" value="전송">
+    </form>
+</body>
+</html>
