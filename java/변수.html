@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--지역 변수-->
+    <script>
+        function test() {
+            number = 10;
+        }
+        number =20;
+        test();
+        document.write("최종 숫자는 "+number +"입니다. ");
+    
+    </script>
+    <br><br>
+    
+    <!--전역 변수-->
+    <script>
+        function test() {
+            var number = 10;
+        }
+        number = 20;
+        test();
+        document.write("최종 숫자는 "+number +"입니다.");
+    </script>
+    <br><br>
+
+    <!--사칙 연산자
+        %는 나머지를 나타냄-->
+    <script>
+        var a=10, b=4;
+
+        res1 = a + b;
+        res2 = a - b;
+        res3 = a * b;
+        res4 = a / b;
+        res5 = a % b;
+
+        document.write("10 + 4 = " + res1 +"<br><br>");
+        document.write("10 - 4 = " + res2 +"<br><br>");
+        document.write("10 * 4 = " + res3 +"<br><br>");
+        document.write("10 / 4 = " + res4 +"<br><br>");
+        document.write("10 % 4 = " + res5);
+    </script>
+
+    <!--
+        증가 연산자(++): 변수 값을 1 증가시키는 것
+        감소 연산자(--): 변수 값을 1 감소시키는 것
+    -->
+    <script>
+        var a=10, b=4;
+
+        document.write("a = "a+"<br>");
+        document.write("a++ = " + (a++) + "<br><br>");
+        document.write("++a = " +(++a)+ "<br>");
+        document.write("b = "+b+"<br>");
+        document.write("--b = " + (--b) + "<br>");
+        document.write("b-- =" + (b--));
+    </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var num1 = prompt("첫번째 숫자는: ");
+        var num2 = prompt("두번째 숫자는: ");
+        var dum = prompt("기호를 선택하세요(+, -, *, /)");
+
+        res1 = parseInt(num1) + parseInt(num2);
+        res2 = parseInt(num1) - parseInt(num2);
+        res3 = parseInt(num1) * parseInt(num2);
+        res4 = parseInt(num1) / parseInt(num2);
+
+        switch (dum) {
+            case "+":
+                document.write(num1+ " + " +num2+ " = " +res1+ "입니다. <br>");
+                break;
+            case "-":
+                document.write(num1+ " - " +num2+ " = " +res2+ "입니다. <br>");
+                break;
+            case "*":
+                document.write(num1+ " x " +num2+ " = " +res3+ "입니다. <br>");
+                break;
+            case "/":
+                if (num1%num2 == 0) 
+                    document.write(num1+ " / " +num2+ " = " +res4+ "입니다. <br>");
+                
+                else
+                    document.write(num1+ " / " +num2+ " = " +res4+ "이고, 나머지는 " +(num1%num2)+ "입니다. <br>");
+                break;
+            default: document.write("처음부터 다시 시작해주세요");
+                break;
+        }
+    </script>
+
+    <script>
+
+
+            var month = prompt("월을 입력하세요.");
+
+
+            switch (month) {
+                case 12:
+                case 1:
+                case 2:
+                        document.write(month+"월은 겨울입니다!");
+                        break;
+                case 3:
+                case 4:
+                case 5:
+                        document.write(month+"월은 봄입니다 !");
+                        break;
+                case 6:
+                case 7:
+                case 8:
+                        document.write(month+"월은 여름입니다 !"); 
+                        break;
+                case 9:
+                case 10:
+                case 11:
+                        document.write(month+"월은 가을입니다 !");
+                        break;
+                default: 
+                        document.write();
+                        break;
+            }
+        
+    </script>
+
+    <script>
+        /*var season = prompt("1월부터 12월까지 중 하나의 월을 기입하세요.");
+
+        switch (season) {
+            case 12:
+            case 1:
+            case 2:
+                document.write(season+ "이 계절은 겨울입니다.");        
+                break;
+            case 3:
+            case 4:
+            case 5:
+                document.write(season+ "이 계절은 봄입니다.");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                document.write(season+ "이 계절은 여름입니다.");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                document.write(season+ "이 계절은 가을입니다.");
+                break;
+            default: document.write();
+                break;
+        }*/
+    </script>
+</body>
+</html>

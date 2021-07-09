@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=10, b=10;
+    
+        document.write("a = " +a+ "<br>");
+        document.write("a++ = " + (a++) + "<br><br>");
+        document.write("++a = " +(++a)+ "<br>");
+        document.write("b = " +b+ "<br>");
+        document.write("--b = " + (--b) + "<br>");
+        document.write("b-- =" + (b--));
+    </script>
+
+    <script>
+        //사칙연산
+        var num1 = prompt("첫번째 수: ")
+        var num2 = prompt("두번째 수: ");
+        
+        res1 = parseInt(num1) + parseInt(num2);
+        res2 = parseInt(num1) - parseInt(num2);
+        res3 = parseInt(num1) * parseInt(num2);
+        res4 = parseInt(num1) / parseInt(num2);
+
+        document.write(num1+"과 "+num2+"를 더하면 <br>");
+        document.write(res1+ "입니다.<br><br> ");
+        document.write(num1+"과 "+num2+"를 빼면 <br>");
+        document.write(res2+ "입니다. <br><br>");
+        document.write(num1+"과 "+num2+"를 곱하면 <br>");
+        document.write(res3+"입니다. <br><br>");
+        document.write(num1+"과 "+num2+"를 나누면 <br>");
+        document.write(res4+"입니다.");
+
+    </script>
+</body>
+</html>
+

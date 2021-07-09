@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--if문-->
+    <script>
+        var num1 = prompt("첫 번째 숫자를 입력해주세요");
+        var num2 = prompt("두번째 숫자를 입력해주세요.");
+        var mid = prompt("사용할 기호를 입력해주세요.");
+
+        res1 = parseInt(num1) + parseInt(num2);
+        res2 = parseInt(num1) - parseInt(num2);
+        res3 = parseInt(num1) * parseInt(num2);
+        res4 = parseInt(num1) / parseInt(num2);
+       
+        if (mid=="+"){
+            document.write("사용하신 기호는 " + mid +" 입니다. <br>");
+            document.write(num1+ mid+ num2+ " = " +res1+ "입니다. <br>" );
+        }
+        else if(mid== "-")
+        {
+            document.write("사용하신 기호는 " +mid+ "입니다. <br>");
+            document.write(num1+ mid+ num2+ " = " +res2+ "입니다. <br>");
+        }
+        else if(mid== "*")
+        {
+            document.write("사용하신 기호는 " +mid+ "입니다. <br>");
+            document.write(num1+ mid+ num2+ " = " +res3+ "입니다. <br>");
+        }
+        else if(mid== "/")
+        {
+            document.write("사용하신 기호는 " +mid+ "입니다. <br>");
+            document.write(num1+ mid+ num2+ " = " +res4+ "입니다. <br>");
+        }
+        else
+        {
+            document.write("입력에 문제가 생겼습니다. 다시 입력해주세요. <br>");
+        }
+    </script>
+</body>
+</html>
