@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //함수와 switch를 이용하여 움직이는 이미지 만들기
+        count = 0;
+        var timerId = null;
+        function Start() 
+        {
+            count = Auto_change_img(count);
+            timerId = setTimeout(Start, 1000);
+        }
+        function Stop()
+        {
+            clearTimeout(timerId)
+        }
+        function Auto_change_img(count)
+        {
+            var myNum = document.getElementById("num");
+            switch(count)
+            {
+                case 0:
+                    str = "/0712/img/facebook.png";
+                    myNum.src = str;
+                    return 1;
+
+                case 1:
+                    str = "/0712/img/html-5.png";
+                    myNum.src = str;
+                    return 2;
+                case 2:
+                    str = "/0712/img/instagram.png";
+                    myNum.src = str;
+                    return 3;
+                case 3:
+                    str = "/0712/img/snapchat.png";
+                    myNum.src = str;
+                    return 4;
+                case 4:
+                    str = "/0712/img/soundcloud.png";
+                    myNum.src = str;
+                    return 5;
+                case 5:
+                    str = "/0712/img/twitter.png";
+                    myNum.src = str;
+                    return 0;
+            }
+        } 
+    </script>
+</head>
+<body>
+    <input type="button" value="고고링" onclick="Start()">
+    <input type="button" value="멈추" onclick="Stop()">
+
+    <div>
+       <img src="/0712/img/facebook.png" id="num"> 
+    </div>
+</body>
+</html>

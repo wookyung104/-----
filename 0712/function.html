@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //함수
+        function changeTo(myImg)
+        {
+            var myNum = document.getElementById("num");
+            myNum.src = myImg;
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <input type="button" value="1로 바꾸기" onclick="changeTo('1.png')">
+        <input type="button" value="2로 바꾸기" onclick="changeTo('2.png')"><br>
+    </form>
+    <div>
+        <img src="1.png" id="num">
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //함수와 switch를 이용하여 세가지로 움직이는 이미지 만들기 - 수정해야 함
+        count = 0;
+        var timerId = null;
+        function Rand(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min)) + min; //최댓값은 제외, 최솟값은 포함
+        }
+        function Start() 
+        {
+            count1 = Auto_change_img(Rand(0, 10), "num1");
+            count2 = Auto_change_img(Rand(0, 10), "num2");
+            count3 = Auto_change_img(Rand(0, 10), "num3");
+            count4 = Auto_change_img(Rand(0, 10), "num4");
+            timerId = setTimeout(Start, 500);
+        }
+        function Stop()
+        {
+            clearTimeout(timerId)
+        }
+        function Auto_change_img(count, id_value)
+        {
+            var myNum = document.getElementById(id_value);
+            str = "/img/" +count+ ".png";
+            myNum.src = str;
+            return count;
+        }  
+    </script>
+</head>
+<body>
+    <input type="button" value="고고링" onclick="Start()">
+    <input type="button" value="멈추" onclick="Stop()">
+
+    <div>
+       <img src="/0712/img/0.png" id="num1"> 
+       <img src="/0712/img/1.png" id="num2">
+       <img src="/0712/img/2.png" id="num3">
+    </div>
+</body>
+</html>
