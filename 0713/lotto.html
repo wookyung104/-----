@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //1~45까지 로또 번호 추출, 중복되는 수 추출하지 않게끔
+        var count = 0;
+        var count_array = [3]; 
+        var score = 0.0, temp_atob = 0.0, temp_btoc = 0.0;
+        max_score = 100;
+        game_count = 0, sum_score = 0;
+        var timerId = null;
+        function Rand(min, max)
+        {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random()*(max - min)) + min;
+        }
+        function Start()
+        {
+            count_array[0] = Auto_change_img(Rand(0, 10), "num1");
+            count_array[1] = Auto_change_img(Rand(0, 10), "num2");
+            count_array[2] = Auto_change_img(Rand(0, 10), "num3");
+            timerId = setTimeout(Start, 100);
+        }
+        function Stop()
+        {
+            if(count_array[0] == count_array[1] && count_array[1] == count_array[2])
+            {
+                score = 100;
+            }
+            else if(count_array[0] == count_array[1] || count_array[1] == count_array[2] || count_array[0] == count_array[2])
+            {
+                score = 60;
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

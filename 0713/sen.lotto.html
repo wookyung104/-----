@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        p{color: cadetblue;}
+    </style>
+    <script>
+        var lotto_array =
+        [Rand(1,45), Rand(1,45), Rand(1,45), Rand(1,45), Rand(1,45), Rand(1,45), Rand(1,45)];
+        var timerId = null;
+        function Rand(min, max)
+        {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min)) + min;
+        } 
+        function Start() {
+            for(i = 0; i < 7; i++)
+            {
+                lotto_array[i] = Rand(1, 45);
+                Auto_change_img(i, "num"+i);
+            }
+            timerId = setTimeout(Start, 10);
+        }
+        function sort()
+        {
+            for(i = 0; i < 7; i++)
+            {
+                for(j = i; j < 7; j++)
+                {
+                    if(lotto_array[i]>lotto_array[j])
+                    {
+                        temp = lotto_array[j];
+                        lotto_array[j] = lotto_array[i];
+                        lotto_array[i] = temp;
+                    }
+                }
+            }
+        }
+        function Stop() 
+        {
+            //check_no();
+            sort();
+            for(i = 0; i < 7; i++)
+            {
+                Auto_change_img(i, "num"+i);
+            }
+            clearTimeout(timerId);
+        }
+        function Auto_change_img(count, id_value)
+        {
+            var myNum = document.getElementById(id_value);
+            str = "/0713/img/ball_"+lotto_array[count]+".png";
+            myNum.src = str;
+            return count;
+        }
+    </script>
+</head>
+<body>
+    <br><br><br><input type="button" value="start" onclick="Start()">
+    <input type="button" value="stop" onclick="Stop()"><br><br>
+    <div>
+        <img src="/0713/img/ball_21.png" width="100px" height="100px" id="num0">
+        <img src="/0713/img/ball_22.png" width="100px" height="100px" id="num1">
+        <img src="/0713/img/ball_34.png" width="100px" height="100px" id="num2">
+        <img src="/0713/img/ball_38.png" width="100px" height="100px" id="num3">
+        <img src="/0713/img/ball_39.png" width="100px" height="100px" id="num4">
+        <img src="/0713/img/ball_42.png" width="100px" height="100px" id="num5">
+        <p><b>Bonus 😎</b></p>
+        <img src="/0713/img/ball_17.png" width="100px" height="100px" id="num6">
+    </div>
+    </div>
+</body>
+</html>
