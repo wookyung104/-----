@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--랜덤으로 하나 꽝 나오기-->
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+    <script>
+        items = [];
+        shuffle_list = [];
+        items_temp = 
+        ["주호민7.gif", "주호민8.gif", "rand_2.png", "rand_1.png", "주호민6.gif"];
+        state = 0;
+            function change(no){
+                box = document.getElementsByTagName("img");
+                if(state == 0)
+                {
+                    shuffle();
+                    state = 1;
+                }
+                str = "/0714/img/"+items[no];
+                box[no].src = str;
+            }
+            function shuffle()
+            {
+                shuffle_list = [Rand(0, 5),Rand(0, 5),Rand(0, 5),Rand(0, 5),Rand(0, 5)];
+                check_no();
+                for(i = 0; i <5; i++)
+                {
+                    items[shuffle_list[i]] = items_temp[i];
+                }
+            }
+            function Rand(min, max) {
+                min = Math.ceil(min);
+                max = Math.floor(max);
+                return Math.floor(Math.random() * (max - min)) + min;
+            }
+            function check_no() {
+                get_no = [0,1,2,3,4];
+                //동일한 요소를 가진 값 제거
+                for(i = 0; i < 5; i++)
+                {
+                    for(k = 0; k< get_no.length;k++)
+                    {
+                        if(shuffle_list[i] == get_no[k])
+                        {
+                            get_no.splice(k,1);
+                        }
+                    }
+                }
+
+                for(i = 0; i < 5; i++)
+                {
+                    for(j = (i+1); j < 5; j++)
+                    {
+                        if(shuffle_list[i]==shuffle_list[j])
+                        {
+                            shuffle_list[i] = get_no[0];
+                            for(k = 0; k< get_no.length;k++)
+                            {
+                                if(shuffle_list[i] == get_no[k])
+                                {
+                                    get_no.splice(k,1);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        
+    </script>
+</head>
+<body>
+    <br><br>
+    <h3>선물 상자를 클릭해보세요 ! 주호민 주의 🚫</h3><br>
+    <div>
+    <img src="/0714/img/present.png" width="200px" onclick="change(0);">
+    <img src="/0714/img/present.png" width="200px" onclick="change(1);">
+    <img src="/0714/img/present.png" width="200px" onclick="change(2);">
+    <img src="/0714/img/present.png" width="200px" onclick="change(3);">
+    <img src="/0714/img/present.png" width="200px" onclick="change(4);"><br><br><br>
+     <input type="button" value="처음으로" class="navyBtn" onclick="location.href='rand_event.html'">
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var today = new Date();
+        var display = today.toLocaleDateString();
+        document.write("<h1>오늘은 며칠인가요?</h1>");
+        document.write(display+ "입니다. ");
+    </script>
+    <br><br>
+    <h1>스터디 회원 모집</h1>
+    <img src="html-5.png" id="logo" alt="HTML5 공식로고" width="200px" height="200px">
+    <script>
+        myImg = document.getElementById("logo");
+        document.write("<p>이미지 파일의 alt 텍스트는 <span>" +myImg.alt+ "</span>입니다. </p>");
+    </script>
+    <br><br>
+    <!--getElementsByClassName() 메서드-->
+    <h1>스터디 회원 모집</h1>
+    <p class="accent">신입생 대상</p>
+    <p><span class="accent">웹 표준 기술</span>에 대해 같이 공부할 스터디 회원을 모집합니다.</p>
+
+    <script>
+        myList = document.getElementsByClassName("accent");
+        document.write("<hr>");
+        document.write("<h3>accent 클래스를 사용하는 요소의 텍스트</h3>");
+        for (i = 0; i < myList.length; i++)
+        document.write(myList[i].textContent+ "<br>");
+    </script>
+</body>
+</html>
