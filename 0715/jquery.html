@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="jquery-1.9.1.js"></script>
+    <script>
+        function showMe()
+        {
+            $('img').show();
+        }
+        function hideMe()
+        {
+            $('img').hide();
+        }
+        // 문서 전체 선택 -->   $('*')   ex) $('*').css('color', '#222')
+    </script>
+    <style>
+        body {}
+    </style>
+</head>
+<body>
+    <h1>jQuery 맛보기</h1><br>
+    <form>
+        <input type="button" value="표시하기" onclick="showMe()">
+        <input type="button" value="감추기" onclick="hideMe()">
+    </form>
+    <img src="logo.png">
+</body>
+</html>
