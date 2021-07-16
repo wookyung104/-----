@@ -18,6 +18,12 @@ a {text-decoration:none;}
 a:hover {text-decoration:underline;}
 a:active {text-decoration:none;}
 
+/*google font*/
+.font{
+    font-family: 'Zen Tokyo Zoo', cursive;
+    font-size: xx-large;
+}
+
 /* skipnavi */
 #skipnavi a {position:absolute;text-align:center;width:200px;display:block;background:#c52227;color:#fff;left:-9999px;}
 #skipnavi a:hover {z-index:999999;margin-left:-100px;left:50%;}
@@ -59,17 +65,17 @@ a:active {text-decoration:none;}
 .bg_img{width: 100%;position:absolute;top:0;left:0;}
 #gateWrap .bg_img > div{width:30.21%;position:absolute;bottom:0;}
 #gateWrap .bg_img > div > div{-ms-transform: matrix(1, 0, 0, 1, 0, 0);-webkit-transform: matrix(1, 0, 0, 1, 0, 0);transform: matrix(1, 0, 0, 1, 0, 0);position: absolute;top: 0;left: 0;bottom: 0;right: 0;}
-#gateWrap .bg_img .adventure .bg_img1{background:url(/_img/gate/pc_intro_01_210607.jpg) no-repeat top center;}
-#gateWrap .bg_img .adventure .bg_line{background:url(/_img/gate/m01_line.png) repeat-x bottom left}
+#gateWrap .bg_img .adventure .bg_img1{background:url(/0715/img/annecy2.png) no-repeat top center;}
+/*#gateWrap .bg_img .adventure .bg_line{background:url(/_img/gate/m01_line.png) repeat-x bottom left}*/
 
-#gateWrap .bg_img .waterpark .bg_img2{background:url(/_img/gate/renew/intro_02.jpg) no-repeat top center;}
-#gateWrap .bg_img .waterpark .bg_line{background:url(/_img/gate/m04_line.png) repeat-x bottom left}
+#gateWrap .bg_img .waterpark .bg_img2{background:url(/0715/img/ottawa2.png) no-repeat top center;}
+/*#gateWrap .bg_img .waterpark .bg_line{background:url(/_img/gate/m04_line.png) repeat-x bottom left}*/
 
-#gateWrap .bg_img .aquarium .bg_img3{background:url(/_img/gate/renew/intro_03.jpg) no-repeat top center;}
-#gateWrap .bg_img .aquarium .bg_line{background:url(/_img/gate/m03_line.png) repeat-x bottom left}
+#gateWrap .bg_img .aquarium .bg_img3{background:url(/0715/img/hirosima2.png) no-repeat top center;}
+/*#gateWrap .bg_img .aquarium .bg_line{background:url(/_img/gate/m03_line.png) repeat-x bottom left}*/
 
-#gateWrap .bg_img .tower .bg_img4{background:url(/_img/gate/renew/intro_04.jpg) no-repeat top center;}
-#gateWrap .bg_img .tower .bg_line{background:url(/_img/gate/m02_line.png) repeat-x bottom left}
+#gateWrap .bg_img .tower .bg_img4{background:url(/0715/img/zagreb2.png) no-repeat top center;}
+/*#gateWrap .bg_img .tower .bg_line{background:url(/_img/gate/m02_line.png) repeat-x bottom left}*/
 
 
 #gateWrap .line{width:100%;height:948px;position:absolute;top:0;}
@@ -96,5 +102,5 @@ a:active {text-decoration:none;}
 #gateWrap .kidstheme .logo{width: 107px;margin: 10px auto 44px;}
 
 
-#gateWrap .gatelogo {position:absolute; z-index:1000; background-color:#da041c; height:5%; text-align:center; display:block; bottom:0; width:100%;}
+#gateWrap .gatelogo {position:absolute; z-index:1000; background-color:#e1bcac; height:5%; text-align:center; display:block; bottom:0; width:100%;}
 #gateWrap .gatelogo img {width:auto; margin-top:0.5%; }

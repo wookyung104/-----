@@ -6,14 +6,20 @@
 	<meta name="viewport" id="viewport" content="width=1024px">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="format-detection" content="telephone=no">
-	<title>LOTTEWORLD</title>
+	<title>International Animation Festival</title>
 	<meta name="title" content="">
 	<meta name="keywords" content="안시 국제애니메이션 페스티벌, 오타와 국제애니메이션 페스티벌, 히로시마 국제애니메이션 페스티벌, 자그레브 국제애니메이션 페스티벌">
 	<meta name="description" content="세계 4대 애니메이션 축제를 만나보세요.">
-	<link href="/0715/css/gate_test.css?v20170201" rel="stylesheet" type="text/css">
+	<!-- <link href="/0715/css/gate_test.css?v20170201" rel="stylesheet" type="text/css"> -->
+	<link href="./css/gate_test.css" rel="stylesheet" type="text/css">
 	<link rel="shortcut icon" href="/_img/gate/favicon_lotte.ico" type="image/x-icon" />
 	<link rel="icon" href="/_img/gate/favicon_lotte.ico" type="image/x-icon" />
-	<script src="/_inc/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+	<!-- <script src="/_inc/js/jquery-1.11.0.min.js" type="text/javascript"></script> -->
+	<script src="./js/jquery-1.11.0.min.js" type="text/javascript"></script>
+
 		<!--[if lt IE 9]>
 			<script type="text/javascript" src="/_inc/js/html5shiv.js"></script>
 			<script type="text/javascript" src="/_inc/js/respond.min.js"></script>
@@ -42,11 +48,11 @@
 
 	</script>
 	<style>
-		#gateWrap .content p.reserve {position:relative;top:-4vh;width: 80%;max-width:260px;min-width:206px;height: 49px;margin:0 auto}
+		#gateWrap .content p.reserve {position:relative;/*top:-4vh;*/width: 100%;max-width:460px;min-width:306px;height: 60px;margin:0 auto}
 		#gateWrap .tower .title{width: 55.62%;margin: 0 auto;}
 		#gateWrap .tower .logo{width: 101px;margin: 10px auto;}
 		#gateWrap .waterpark .title{width: 91.724%;margin: 0 auto;}
-		#gateWrap .waterpark .logo{width: 46px;margin: 10px auto 44px;}
+		/*#gateWrap .waterpark .logo{width: 46px;margin: 10px auto 44px;}*/
 	</style>
 </head>
 <body id="night"><!-- id -->
@@ -55,7 +61,7 @@
 	</div>
 
 	<div id='gateWrap'>
-		<div class="gatelogo"><img src="/_img/gate/lotte_logo.gif" alt="lotteworld" /></div>
+		<div class="gatelogo"> <p class="font">International Animation Festival</p><!--<img src="/_img/gate/lotte_logo.gif" alt="lotteworld" />--></div>
 		<div class='bg_img'>
 			<!-- 어드벤처 -->
 			<div class='adventure first'>
@@ -84,41 +90,41 @@
 		</div>
 		<div class='content'>
 			<div class='adventure'>
-					<a href='http://www.lotteworld.com/index.asp' onClick="trackOutboundLink('http://www.lotteworld.com/index.asp'); return false;">
+					<a href='./annecy.html' onClick="trackOutboundLink('http://www.lotteworld.com/index.asp'); return false;">
 					<!--<a href='/index.asp' onClick="trackOutboundLink('http://www.lotteworld.com/index.asp'); return false;">-->
-					<div class='box'><img src='/0715/img/annecy.jpg' alt=''/></div>
-					<div class='title hide'><img src='/_img/gate/m01_title.png' alt=''/></div>
-					<div class='logo'><img src='/_img/gate/m01_logo1.png' alt=''/></div>
+					<div class='box'><img src='/0715/img/annecy2.png' alt=''/></div>
+					<!--<div class='title hide'><img src='/_img/gate/m01_title.png' alt=''/></div>
+					<div class='logo'><img src='/_img/gate/m01_logo1.png' alt=''/></div>-->
 				</a>
-				<div class='logo2 hide'>
+				<!--<div class='logo2 hide'>
 					<a href='/museum/'><img class='logo2_1' src='/_img/gate/m01_logo2.png' alt=''/></a>
 					<a href='/icerink/'><img class='logo2_2' src='/_img/gate/m01_logo3.png' alt=''/></a>
-				</div>
-				<p class="reserve hide"><a href="https://mticket.lotteworld.com/web/pdt/productList.do?ei_gsber=1210&ei_bukrs=1200" target="_blank" title="어드벤처 예매사이트 바로가기 새창열림"><img src="/_img/gate/btn_reserve.png" alt="온라인 예매 바로가기"></a></p>
+				</div>-->
+				<!--<p class="reserve hide"></p>--><a href="https://mticket.lotteworld.com/web/pdt/productList.do?ei_gsber=1210&ei_bukrs=1200" target="_blank" title="어드벤처 예매사이트 바로가기 새창열림"><!--<img src="/_img/gate/btn_reserve.png" alt="온라인 예매 바로가기">--></a></p>
 			</div>
 			<div class='waterpark'>
-				<a href='https://seoulsky.lotteworld.com/' onClick="trackOutboundLink('https://seoulsky.lotteworld.com/'); return false;">
-					<div class='box'><img src='/0715/img/ottawa.jpg' alt=''/></div>
-					<div class='title hide'><img src='/_img/gate/170808_m04_title.png' alt=''/></div>
-					<div class='logo'><img src='/_img/gate/m04_logo.png' alt=''/></div>
+				<a href='./ottawa.html' onClick="trackOutboundLink('https://seoulsky.lotteworld.com/'); return false;">
+					<div class='box'><img src='/0715/img/ottawa2.png' alt=''/></div>
+					<!--<div class='title hide'><img src='/_img/gate/170808_m04_title.png' alt=''/></div>
+					<div class='logo'><img src='/_img/gate/m04_logo.png' alt=''/></div>-->
 				</a>
-				<p class="reserve hide"><a href="https://mticket.lotteworld.com/web/pdt/productList.do?ei_gsber=1250&ei_bukrs=1200" target="_blank" title="서울스카이 예매사이트 바로가기 새창열림"><img src="/_img/gate/btn_reserve.png" alt="온라인 예매 바로가기"></a></p>
+				<!--<p class="reserve hide">--><a href="https://mticket.lotteworld.com/web/pdt/productList.do?ei_gsber=1250&ei_bukrs=1200" target="_blank" title="서울스카이 예매사이트 바로가기 새창열림"><!--<img src="/_img/gate/btn_reserve.png" alt="온라인 예매 바로가기">--></a></p>
 			</div>
 			<div class='aquarium'>
 				<a href='/aquarium/index.asp' onClick="trackOutboundLink('http://www.lotteworld.com/aquarium/index.asp'); return false;">
-					<div class='box'><img src='/0715/img/hirosima.jpg' alt=''/></div>
-					<div class='title hide'><img src='/_img/gate/m03_title.png' alt=''/></div>
-					<div class='logo'><img src='/_img/gate/m03_logo.png' alt=''/></div>
+					<div class='box'><img src='/0715/img/hirosima2.png' alt=''/></div>
+					<!--<div class='title hide'><img src='/_img/gate/m03_title.png' alt=''/></div>
+					<div class='logo'><img src='/_img/gate/m03_logo.png' alt=''/></div>-->
 				</a>
-				<p class="reserve hide"><a href="https://mticket.lotteworld.com/web/pdt/productList.do?ei_gsber=1240&ei_bukrs=1200" target="_blank" title="아쿠아리움 예매사이트 바로가기 새창열림"><img src="/_img/gate/btn_reserve.png" alt="온라인 예매 바로가기"></a></p>
+				<!--<p class="reserve hide">--><a href="https://mticket.lotteworld.com/web/pdt/productList.do?ei_gsber=1240&ei_bukrs=1200" target="_blank" title="아쿠아리움 예매사이트 바로가기 새창열림"><!--<img src="/_img/gate/btn_reserve.png" alt="온라인 예매 바로가기">--></a></p>
 			</div>
 			<div class='tower'>
 				<a href='/waterpark/index.asp' onClick="trackOutboundLink('http://www.lotteworld.com/waterpark/index.asp'); return false;">
-					<div class='box'><img src='/0715/img/zagreb_1.png' alt=''/></div>
-					<div class='title hide'><img src='/_img/gate/m02_title.png' alt=''/></div>
-					<div class='logo'><img src='/_img/gate/m02_logo.png' alt=''/></div>
+					<div class='box'><img src='/0715/img/zagreb2.png' alt=''/></div>
+					<!--<div class='title hide'><img src='/_img/gate/m02_title.png' alt=''/></div>
+					<div class='logo'><img src='/_img/gate/m02_logo.png' alt=''/></div>-->
 				</a>
-				<p class="reserve hide"><a href="https://mticket.lotteworld.com/web/pdt/productList.do?ei_gsber=1230&ei_bukrs=1200" target="_blank" title="워터파크 예매사이트 바로가기 새창열림"><img src="/_img/gate/btn_reserve.png" alt="온라인 예매 바로가기"></a></p>
+				<!--<p class="reserve hide">--><a href="https://mticket.lotteworld.com/web/pdt/productList.do?ei_gsber=1230&ei_bukrs=1200" target="_blank" title="워터파크 예매사이트 바로가기 새창열림"><!--<img src="/_img/gate/btn_reserve.png" alt="온라인 예매 바로가기">--></a></p>
 			</div>
 		</div>
 	</div>
