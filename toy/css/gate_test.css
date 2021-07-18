@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+* {margin:0px;padding:0px;}
+html, body {height:100%;}
+body {width:100%;height:100%;color:#434343;font-family:Nanum Gothic, 돋움, Dotum, "Apple Gothic", sans-serif;font-size:12px;}
+.clfix:after, .tab:after {content: "."; display: block; height: 0px; clear: both; visibility: hidden;}
+.clfix, .tab {display: inline-block;}
+.clfix, .tab {display: block;}
+* html .clfix, * html .tab {height: 1%;} /* Hides from IE-mac */
+.clfix, .tab { zoom:1; } /*for IE 5.5-7*/
+
+li{list-style-type:none;}
+
+.ir {text-indent:-100%;*text-indent:0;white-space:nowrap;overflow:hidden;font-size:0;line-height:0;text-shadow:none;color:transparent;}
+.ib {display:-moz-inline-stack;display:inline-block;zoom:1;*display:inline;}
+
+a {text-decoration:none;}
+a:hover {text-decoration:underline;}
+a:active {text-decoration:none;}
+
+/*google font*/
+.font{
+    font-family: 'Zen Tokyo Zoo', cursive;
+    font-size: xx-large;
+}
+
+/* skipnavi */
+#skipnavi a {position:absolute;text-align:center;width:200px;display:block;background:#c52227;color:#fff;left:-9999px;}
+#skipnavi a:hover {z-index:999999;margin-left:-100px;left:50%;}
+#skipnavi a:focus {z-index:999999;margin-left:-100px;left:50%;}
+#skipnavi a:active {z-index:999999;margin-left:-100px;left:50%;}
+
+
+/* 2016-04-19 */
+/*#gateWrap, #gateWrap .content , #gateWrap .content > div, #gateWrap .bg_img , #gateWrap .bg_img > div{height:100%;box-sizing: border-box;}*/
+.zindex{z-index:10;}
+#gateWrap,
+#gateWrap .content,
+/*#gateWrap .content > div, */
+#gateWrap .bg_img,
+#gateWrap .bg_img > div{height:100%;box-sizing: border-box; top:-2%;}
+#gateWrap img {width:100%;border:0 none;}
+#gateWrap .content { width:100%;height:58%;color:#fff;font-size:36px;text-align:center;}
+#gateWrap .content .hide{opacity:0;}
+#gateWrap .content > div, #gateWrap .bg_img > div{width:25%;padding-top: 50%;position:absolute;bottom:5%;overflow:hidden; }
+#gateWrap .content > div > a{display:block;width:100%;height:100%;position:relative;box-sizing: border-box;color:#fff;}
+#gateWrap .content > div:hover{cursor:pointer;}
+#gateWrap .content > div > a span{display:block;}
+
+/* #gateWrap .content > div.adventure{left:0;}
+#gateWrap .content > div.waterpark{left:25%;-ms-transform: translateX(-50%);-webkit-transform: translateX(-50%);transform: translateX(-50%);}
+#gateWrap .content > div.aquarium{left:50%;-ms-transform: translateX(-50%);-webkit-transform: translateX(-50%);transform: translateX(-50%);}
+#gateWrap .content > div.tower{right:0;} */
+#gateWrap .content > div.adventure{left:0;}
+#gateWrap .content > div.waterpark{left:25%;}
+#gateWrap .content > div.aquarium{left:50%;}
+#gateWrap .content > div.tower{right:0;}
+
+#gateWrap .bg_img > div.adventure{left:0;}
+#gateWrap .bg_img > div.waterpark{left:22.39%;}
+#gateWrap .bg_img > div.aquarium{left:47.39%;}
+#gateWrap .bg_img > div.tower{right:0;}
+
+
+.bg_img{width: 100%;position:absolute;top:0;left:0;}
+#gateWrap .bg_img > div{width:30.21%;position:absolute;bottom:0;}
+#gateWrap .bg_img > div > div{-ms-transform: matrix(1, 0, 0, 1, 0, 0);-webkit-transform: matrix(1, 0, 0, 1, 0, 0);transform: matrix(1, 0, 0, 1, 0, 0);position: absolute;top: 0;left: 0;bottom: 0;right: 0;}
+#gateWrap .bg_img .adventure .bg_img1{background:url(/0715/img/annecy2.png) no-repeat top center;}
+/*#gateWrap .bg_img .adventure .bg_line{background:url(/_img/gate/m01_line.png) repeat-x bottom left}*/
+
+#gateWrap .bg_img .waterpark .bg_img2{background:url(/0715/img/ottawa2.png) no-repeat top center;}
+/*#gateWrap .bg_img .waterpark .bg_line{background:url(/_img/gate/m04_line.png) repeat-x bottom left}*/
+
+#gateWrap .bg_img .aquarium .bg_img3{background:url(/0715/img/hirosima2.png) no-repeat top center;}
+/*#gateWrap .bg_img .aquarium .bg_line{background:url(/_img/gate/m03_line.png) repeat-x bottom left}*/
+
+#gateWrap .bg_img .tower .bg_img4{background:url(/0715/img/zagreb2.png) no-repeat top center;}
+/*#gateWrap .bg_img .tower .bg_line{background:url(/_img/gate/m02_line.png) repeat-x bottom left}*/
+
+
+#gateWrap .line{width:100%;height:948px;position:absolute;top:0;}
+#gateWrap .bg_line{width:100%;height:100%;background-size:100% 69%;}
+#gateWrap .shadow{width:100%;height:100%;background-color:#000;opacity:0.3;position:absolute;top:0;left:0;}
+
+#gateWrap .box{width:54.1%;margin: 0 auto;}
+#gateWrap .aquarium .box{width:54.1%;margin: 0 auto;}
+
+#gateWrap .title{height:60px;}
+#gateWrap .logo{height:90px;}
+#gateWrap .adventure .title{width: 54.16%;margin: 0 auto 10px;}
+#gateWrap .adventure .logo{width: 98px;margin: 10px auto 20px;}
+#gateWrap .adventure .logo2 {position:absolute;bottom:0;left:0;right:0;}
+#gateWrap .adventure .logo2 .logo2_1{width: 120px;margin: 0 auto;}
+#gateWrap .adventure .logo2 .logo2_2{width: 108px;margin: 0 auto;}
+#gateWrap .waterpark .title{width: 55.62%;margin: 0 auto;}
+#gateWrap .waterpark .logo{width: 101px;margin: 10px auto;}
+#gateWrap .aquarium .title{width: 60%;margin: 0 auto;}
+#gateWrap .aquarium .logo{width: 144px;margin: 10px auto 44px;}
+#gateWrap .tower .title{width: 91.724%;margin: 0 auto;}
+#gateWrap .tower .logo{width: 44px;margin: 10px auto 44px;}
+#gateWrap .kidstheme .title{width: 67.816%;margin: 0 auto;}
+#gateWrap .kidstheme .logo{width: 107px;margin: 10px auto 44px;}
+
+
+#gateWrap .gatelogo {position:absolute; z-index:1000; background-color:#e1bcac; height:5%; text-align:center; display:block; bottom:0; width:100%;}
+#gateWrap .gatelogo img {width:auto; margin-top:0.5%; }
