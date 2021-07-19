@@ -120,10 +120,10 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
   background: rgba(0, 0, 0, 0.8);
 }
 
-#video{
+/*#video{
   margin-top: 180px;
   margin-left: 350px;
-}
+}*/
 
 * {
   margin: 0;
@@ -144,7 +144,7 @@ h1 {
   padding: 40px;
   box-sizing: border-box;
   box-shadow: 0px 8px 33px #999;
-  margin-left: 300px;
+  /*margin-left: 300px;*/
 }
 
 .video1{
@@ -156,8 +156,8 @@ h1 {
   padding: 40px;
   box-sizing: border-box;
   box-shadow: 0px 8px 33px #999;
-  margin-left: 900px;
-  margin-top: -320px;
+  /*margin-left: 900px;
+  margin-top: -320px;*/
 }
 
 .video-container {
@@ -177,8 +177,8 @@ iframe {
 }
 
 #movie{
-  margin-left: 330px;
-  margin-top: 35px;
+  /*margin-left: 330px;
+  margin-top: 35px;*/
   font-size: x-large;
 }
 
@@ -209,8 +209,8 @@ iframe {
 }
 
 .background-wrap3 {
-  background-image: url(https://www.annecy.org/resources/interface/vignette_en_images_2018.jpg);
-  background-size: 272px 196px;
+  background-image: url('https://www.annecy.org/resources/interface/vignette_en_images_2018.jpg');
+  background-size: 272px 211px;
   width: 272px;
   height: 196px;
   display: flex;
@@ -308,6 +308,12 @@ iframe {
   align-items: center;
 }
 
+/*award영역 가운데 정렬*/
+/*.official{
+  position: absolute;
+  text-align: center;
+  display: flex;
+}*/
 
 
 .content {
@@ -328,7 +334,54 @@ iframe {
   font-size: 20px;
 }
 
-#annecy_r {
+/*record 가운데 정렬*/
+.item-wrap {
+	max-width: 1280px;
+	margin: 0 auto;
+  margin-left: 350px;
+  margin-right: 350px;
+  margin-top: -250px;
+}
+.item-wrap .items { /* 자식들을 감싸고 있는 부모 */
+	display: block;
+	font-size: 0; /* 가장 중요한 font-size: 0; 속성 */
+	margin: 0 -5px; /* 너비간 10px 간격을 만들기 위해 남은 5px을 양옆으로 땡겨줌 */
+}
+.item-wrap .items .item { /* 나란히 배치할 영역 */
+	display: inline-block;
+	width: 50%;
+	padding: 0 5px; /* 간격을 위해 각 너비에 준 패딩 5px을 줌 */
+	vertical-align: middle; /* 나란히 배치하는 와중에 수직정렬도 가운데로 하려고 준 속성 */
+	text-align: center; /* 영역 안 태그들의 텍스트가 center로 오도록 준 속성 */
+	box-sizing: border-box; /* width값이 오롯이 50%를 갖게 하기 위해 준 속성 */
+}
+.item-wrap .items .item .inner { /* 나란히 배치할 영역 안 텍스트를 감싼 div */
+	height: 200px;
+	font-size: initial; /* font-size: 0;을 하면 그 아래 자식들 모두 상속받기 때문에 텍스트가 있는 경우라면 꼭 줘야할 속성 */
+	 /* 간격과 영역을 보여주기 위한 속성 */
+}
+.item-wrap .items .item .inner:before { /* 텍스트를 수직 가운데 정렬하기 위한 가상선택자 */
+	content: ''; /* 가상선택자 안에 빈값을 넣어주기 위해 적용한 속성 */
+	display: inline-block; /* inline-block이어야 vertical-align을 쓸 수 있기 때문에 준 속성 */
+	vertical-align: middle; /* 수직 가운데 정렬을 하기 위해 준 속성 */
+	width: 0; /* 다음에 올 태그와 수직을 맞추기 위한 것이므로 width값은 필요없어서 0으로 줌 */
+	height: 100%; /* height값은 부모의 높이값을 100% 상속받아야 하기 때문에 준 속성 */
+}
+.item-wrap .items .item .inner span { /* 가상선택자와 나란히 배치하기 위해 준 속성 */
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.ottawa_co{
+  text-align: center;
+}
+
+.background-wrap13 {
+  background-image: url( https://www.animationfestival.ca/wp-content/uploads/2021/07/Competition-Image.png);
+  background-size: 272px 196px;
+  width: 800px;
+  height: 350px;
   display: flex;
-        justify-content: center;
+  justify-content: center;
+  align-items: center;
 }

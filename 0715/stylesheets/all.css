@@ -115,6 +115,15 @@ header #logo_hover {
 .plus{
     font-family: 'Noto Sans KR', sans-serif;
 }
+.ottawa{
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: xx-large;
+}
+.ottawa2{
+  font-family: 'Noto Sans KR', sans-serif;
+    font-size: medium;
+}
 
 #logo_hover {
   z-index: 21;
@@ -129,7 +138,7 @@ header #slogan {
   position: absolute;
   left: 148px;
   top: 27px;
-  margin-left: 200px;
+  /*margin-left: 200px;*/
 }
 
 header #info,
@@ -138,7 +147,7 @@ header #info-mobile {
   top: 103px;
   left: 150px;
   line-height: 18px;
-  margin-left: 200px;
+ /* margin-left: 200px;*/
 }
 
 header #lang {
@@ -172,9 +181,9 @@ header #search input {
   display: none;
 }
 
-header ul#logo {
+/*header ul#logo {
  margin-left: 100px;
-}
+}*/
 
 header ul#menu {
   position: absolute;
@@ -184,7 +193,7 @@ header ul#menu {
   padding: 0;
   margin: 0;
   border-bottom: 1px solid #00437c;
-  margin-left: 200px;
+  /*margin-left: 200px;*/
 }
 
 header ul#menu li {
@@ -312,10 +321,10 @@ header ul#menu-mobile > li > ul li a {
 
 /*** SIDEBAR ***/
 
-.social{
+/*.social{
     margin-left: 180px;
     top: 20px;
-}
+}*/
 
 #sidebar {
   min-height: 1px;
@@ -478,6 +487,7 @@ header ul#menu-mobile > li > ul li a {
   position: relative;
   line-height: 18px;
   margin-bottom: 50px;
+  margin-left: 150px; 
 }
 
 

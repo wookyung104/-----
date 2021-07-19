@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ANNECY INTERNATIONAL ANIMATED FILM FESTIVAL</title>
+    <title>OTTAWA INTERNATIONAL ANIMATED FILM FESTIVAL</title>
 
     <meta property="og:title" content="animafest.hr">
   <meta property="og:description" content="">
@@ -27,6 +27,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gothic+A1:wght@400;500;700&family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
 
+<!--Scroll To Top 맨 위로 이동 버튼-->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<link rel="stylesheet" href="./css/style.css" type="text/css">
   <link href="./stylesheets/all.css" media="all" rel="stylesheet" type="text/css">
 
 <!--<script src="http://www.animafest.hr/javascripts/galleria/themes/classic/galleria.classic.min.js" async="async"></script>--><!--<script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/45/6a/intl/ko_ALL/common.js"></script>--><!--<script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/45/6a/intl/ko_ALL/util.js"></script>-->
@@ -37,14 +40,31 @@
 <link rel="stylesheet" href="./css/slide.css" type="text/css">
 
 
-
+<!--Scroll To Top 맨 위로 이동 버튼-->
+<script>
+    $(function() {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 250) {
+                $('#topBtn').fadeIn();
+            }else {
+                $('#topBtn').fadeOut();
+            }
+        });
+        $("#topBtn").click(function() {
+            $('html, body').animate({
+                scrollTop : 0
+            }, 400);
+            return false;
+        });
+    });
+</script>
 <style>
     .title{
         display: flex;
         justify-content: center;
     }
     body{
-      background-color:  #F2EE94;
+      background-color: 
     }
 </style>
 
@@ -57,9 +77,9 @@
         <div class="title"> 
         <!--header txt-->
         <div id="slogan"><p class="annecy"><br>
-          <a href="./annecy2.html">  ANNECY International Animated Film Festival</a></p><!--<img alt="Title" src="/images/header/title_2021.png">--></div>
-            <div id="info" class="hidden-mobile t-14 t-smallcaps">World Festival of Animated Film / <br> <strong>14 to 19 June 2021</strong></div>
-            <div id="info-mobile" class="hidden-desktop hidden-tablet t-14 t-smallcaps">World Festival of Animated Film /  <strong>14 to 19 June 2021</strong></div>
+          <a href="./zagreb.html"> ANIMAFEST ZAGREB</a></p><!--<img alt="Title" src="/images/header/title_2021.png">--></div>
+            <div id="info" class="hidden-mobile t-14 t-smallcaps">World Festival of Animated Film / <br> <strong>7 to 12 June 2021</strong></div>
+            <div id="info-mobile" class="hidden-desktop hidden-tablet t-14 t-smallcaps">World Festival of Animated Film /  <strong> 7 to 12 June 2021</strong></div>
 
         <!--menu-->    
             <ul id="menu" class="hidden-mobile hidden-tablet t-14 t-smallcaps t-lcase">
@@ -69,9 +89,9 @@
                 </li>
 
                 <li class="menu-festival ">
-                    <a href="./annecy_about.html">Festival</a>
+                    <a href="/en/2021/festival/about_us">Festival</a>
                     <ul class="t-nrm t-cap t-12 lh-16">
-                                  <li><a href="./annecy_about.html"><span>About us</span></a></li>
+                                  <li><a href="/en/2021/festival/about_us"><span>About us</span></a></li>
                 </ul>
                 </li>
 
@@ -86,7 +106,7 @@
                 <li class="menu-pro ">
                     <a href="#">Record</a>
                     <ul class="t-nrm t-cap t-12 lh-16">
-                    <li><a href="./annecy_record.html"><span>Anncey's record</span></a></li>
+                    <li><a href="./annecy_record.html"><span>Ottawa's record</span></a></li>
                     </ul>
                     </li>
 
@@ -97,19 +117,28 @@
 
     <!--side bar-->
     <div class="social">
-        <a href="https://www.youtube.com/user/annecyfestival"><img src="./img/youtube.png" alt="" width="50px" class="button-social"></a>
-        <a href="https://www.facebook.com/annecyfestival"><img src="./img/facebook.png" alt="" width="50px" class="button-social"></a><br>
-        <a href="https://twitter.com/annecyfestival/"><img src="./img/twitter.png" alt="" width="50px" class="button-social"></a>
-        <a href="https://www.instagram.com/annecyfestival/"><img src="./img/instagram.png" alt="" width="50px" class="button-social"></a>
+        <a href="https://www.youtube.com/user/AnimafestZagreb"><img src="./img/youtube.png" alt="" width="50px" class="button-social"></a>
+        <a href="https://www.facebook.com/OttawaAnimationFestival/"><img src="./img/facebook.png" alt="" width="50px" class="button-social"></a><br>
+        <a href="https://twitter.com/animafest_zg?lang=ko"><img src="./img/twitter.png" alt="" width="50px" class="button-social"></a>
+        <a href="https://www.facebook.com/AnimafestZagreb/"><img src="./img/instagram.png" alt="" width="50px" class="button-social"></a>
     </div>
 
+    <center>
+    <div class="ottawa_co">
+        <img src="http://i.effectiva.studio/api/v1/image/animafest.production/news_items/images/587-vr_animation_competition.png?t=310x310c&s=8314e" alt="" width="600px" height="600px"><br><br><br>
+        <p class="ottawa"><h1>ANIMAFEST ZAGREB <br>
+        </h1> <h2>7 to 12 June 2021</h2></p>
+    </div><br><br>
+    <hr class="" width="80%" align="center">
+      </center>
+<br><br><br>
     
     <!--사진 움직임-->
     <ul class="slides">
       <input type="radio" name="radio-btn" id="img-1" checked />
       <li class="slide-container">
       <div class="slide">
-        <img src="https://www.annecy.org/resources/images/affiche_2021_1920pxh.jpg" />
+        <img src="http://i.effectiva.studio/api/v1/image/animafest.production/pictures/images/10755-award_ceremony_120.jpg?t=1000x750&s=ca892" />
           </div>
       <div class="nav">
         <label for="img-6" class="prev">&#x2039;</label>
@@ -120,7 +149,7 @@
       <input type="radio" name="radio-btn" id="img-2" />
       <li class="slide-container">
           <div class="slide">
-            <img src="https://www.annecy.org/resources/images/affiche_ANNECY_ONLINE.jpg" />
+            <img src="http://i.effectiva.studio/api/v1/image/animafest.production/pictures/images/10668-award_ceremony_1a.jpg?t=1000x750&s=e4bc2" />
           </div>
       <div class="nav">
         <label for="img-1" class="prev">&#x2039;</label>
@@ -131,7 +160,7 @@
       <input type="radio" name="radio-btn" id="img-3" />
       <li class="slide-container">
           <div class="slide">
-            <img src="https://www.annecy.org/resources/images/affiche_Annecy2019_2900pxh.jpg" />
+            <img src="http://i.effectiva.studio/api/v1/image/animafest.production/films/images/3370-ref.png?t=660x340c&s=64cdf" />
           </div>
       <div class="nav">
         <label for="img-2" class="prev">&#x2039;</label>
@@ -142,7 +171,7 @@
       <input type="radio" name="radio-btn" id="img-4" />
       <li class="slide-container">
           <div class="slide">
-            <img src="https://www.annecy.org/resources/images/affiche_annecy2018_2900pxh.jpg" />
+            <img src="http://i.effectiva.studio/api/v1/image/animafest.production/films/images/3461-sf002_ref.png?t=660x340c&s=180a1" />
           </div>
       <div class="nav">
         <label for="img-3" class="prev">&#x2039;</label>
@@ -153,7 +182,7 @@
       <input type="radio" name="radio-btn" id="img-5" />
       <li class="slide-container">
           <div class="slide">
-            <img src="https://www.annecy.org/resources/images/annecy2017_affiche.jpg" />
+            <img src="http://i.effectiva.studio/api/v1/image/animafest.production/films/images/3369-1.PNG?t=660x340c&s=302ab" />
           </div>
       <div class="nav">
         <label for="img-4" class="prev">&#x2039;</label>
@@ -170,27 +199,41 @@
       </li>
   </ul>
 
-  <br><br><br><br><br><br>
+  <br><br><br><br><br><br><br>
+  <center>
+
+    <div class="text-on-img">
+        <div class="background-wrap13">
+          <div class="content">
+            <span><p class="winner">ZAGREB란?</p><br>
+            <p class="ottawa2"> 1972년에 설립된 이 축제는 도시의 예술적 삶과 홍보에 크게 기여했습니다.<br>
+            영화인을 위한 영화인의 축제로, 다양한 형태의 창의적인 애니메이션으로 주목받아 왔습니다. <br>
+            영감, 창의성, 아이디어 교환, 혁신, 커뮤니케이션 및 국제적 다양성의 장소입니다.</p>
+            </span>
+          </div>
+        </div>
+      </div>
+    <hr class="" width="80%" align="center">
+  </center>
+      <br><br><br><br><br>
+
   <div>
     <div id="video"><p class="annecy" style="color: black; text-align: center;">VIDEOS</p></div>
-     <div id="movie"><p class="plus" style="text-align: center;"><i><b>Anncey 2021 Aftermovie</b></i></p></div>
+     <div id="movie"><p class="plus" style="text-align: center;"><i><b></b></i></p></div>
       <div class="video">
         <div class="video-container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/kihCloFPO5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dbYCcsjJ7oI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div> 
     </div>
 
     <div class="video1">
       <div class="video-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/0e5M7H_8ly4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/g8oVorFWUjA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 
-  <center>
-    <hr class="" width="80%" align="center">
-  </center>
-      
+
       
 
-    
+  
 </body>
 </html>
