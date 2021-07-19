@@ -1,159 +1,334 @@
-/* Global */
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+body {
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top top;
+  background-color: F2EE94;
+  color: #00437c;
+}
+
+.slides {
+    padding: 0;
+    width: 609px;
+    height: 420px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slides * {
     user-select: none;
-  }
-  
-  html,
-  body,
-  .container {
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 609px;
+    height: 520px;
+    display: block;
+    position: absolute;
+
+    transform: scale(0);
+
+    transition: all .7s ease-in-out;
+}
+
+.slide img {
     width: 100%;
     height: 100%;
-    max-height: 100%;
-    margin: 0;
-    padding: 0;
-    /* Font styles */
-    font-family: 'Roboto Slab', serif;
-    font-size: 1em;
-    line-height: 1.5em;
-    color: #607D8B;
-    letter-spacing: .01em;
-  }
-  
-  .container {
-    position: relative;
-  }
-  
-  /* Panels */
-  .swipe {
-    position: relative;
-    width: 100%;
-    height: 100%; /* "min-height" doesn't work on Firefox. */
-    background: #eee;
-    overflow-x: hidden;
-  }
-  
-  .panel {
+}
+
+.nav label {
+    width: 200px;
+    height: 100%;
+    display: none;
     position: absolute;
-    width: 100%;
-    min-height: 100%;
-    top: 0;
-    left: 0;
-    padding: 20px;
-  }
-  
-  .left {
-    left: -100%;
-  }
-  
-  .right {
-    left: 100%;
-  }
-  
-  /* Info */
-  .info {
-    position: absolute;
-    width: 80%;
-    max-width: 500px;
-    bottom: 20%;
-    right: 10%;
-    pointer-events: none;
-  }
-  
-  .inner {
-    position: relative;
-    padding: 1.66em 3em;
-    background: #FFFFFF;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  }
-  
-  .info:before {
-    content: "";
-    position: absolute;
-    width: 65%;
-    height: 80%;
-    top: 0;
-    left: 0;
-    -webkit-transform: translate(-10px, -10px);
-    -ms-transform: translate(-10px, -10px);
-    -o-transform: translate(-10px, -10px);
-    transform: translate(-10px, -10px);
-    background: #E91E63;
-    background: #3F51B5;
-  }
-  
-  .buttons {
-    position: absolute;
-    bottom: -50px;
-    right: 5%;
-    pointer-events: all;
-  }
-  
-  .buttons button {
-    transition: ease .4s;
-  }
-  
-  .btn-prev,
-  .btn-next {
-    width: 60px;
-    height: 60px;
-    margin-left: 10px;
-    border: none;
-    outline: none;
-    border-radius: 60px;
-    color: #FFFFFF;
-    background: -webkit-linear-gradient(top, #F5515F, #E91E63);
-    background: linear-gradient(to bottom, #F5515F, #E91E63);
-    box-shadow: 0px 3px 15px 2px rgba(245,81,95,.8);
+
+    opacity: 0;
+    z-index: 9;
     cursor: pointer;
-  }
+
+    transition: opacity .2s;
+
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+  width: 100%;
+  bottom: 9px;
+  height: 11px;
+  display: block;
+  position: absolute;
+  text-align: center;
+}
+
+.nav-dots .nav-dot {
+  top: -5px;
+  width: 11px;
+  height: 11px;
+  margin: 0 4px;
+  position: relative;
+  border-radius: 100%;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6 {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#video{
+  margin-top: 180px;
+  margin-left: 350px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+h1 {
+  text-align: center;
+}
+
+.video {
+  width: 100%;
+  max-width: 500px;
+  margin: 30px auto;
+  border-radius: 30px;
+  background-color: #f0f0f0;
+  padding: 40px;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 33px #999;
+  margin-left: 300px;
+}
+
+.video1{
+  width: 100%;
+  max-width: 500px;
+  margin: 30px auto;
+  border-radius: 30px;
+  background-color: #f0f0f0;
+  padding: 40px;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 33px #999;
+  margin-left: 900px;
+  margin-top: -320px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 50%;
+}
+
+iframe {
+  z-index: 1;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#movie{
+  margin-left: 330px;
+  margin-top: 35px;
+  font-size: x-large;
+}
+
+.award{
+  text-align: center;
   
-  .buttons button:hover {
-    box-shadow: 0px 3px 30px 3px rgba(245,81,95,.8);
-  }
-  
-  .buttons button:disabled {
-    box-shadow: 0px 1px 5px 0px rgba(245,81,95,.8);
-    background: -webkit-linear-gradient(top, #E91E63, #F5515F);
-    background: linear-gradient(to bottom, #E91E63, #F5515F);
-    cursor: default;
-  }
-  
-  /* Optional content */
-  .optional {
-    width: 80%;
-    max-width: 680px;
-    margin: 6em auto;
-    padding: 2em 3em;
-    box-shadow: 
-      0 3px 12px rgba(0,0,0,0.16), 
-      0 3px 12px rgba(0,0,0,0.23);
-  }
-  
-  @media (max-width: 620px) {
-    body {
-      font-size: 13px;
-      line-height: 1.5em;
-    }
-    .info {
-      position: absolute;
-      width: 100%;
-      max-width: 100%;
-      bottom: 0;
-      right: 0;
-    }
-  
-    .inner {
-      padding: .5em 1.5em;
-      box-shadow: none;
-    }
-    
-    .buttons {
-      display: none;
-    }
-  }
+}
+
+/*텍스트 위에 글 올리기*/
+.background-wrap {
+  background-image: url('https://www.annecy.org/resources/interface/vignette_en_images_2020.jpg');
+  background-size: 272px 196px;
+  width: 272px;
+  height: 196px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-wrap2 {
+  background-image: url( https://www.annecy.org/resources/interface/vignette_en_images_2019.jpg);
+  background-size: 272px 196px;
+  width: 272px;
+  height: 196px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-wrap3 {
+  background-image: url(https://www.annecy.org/resources/interface/vignette_en_images_2018.jpg);
+  background-size: 272px 196px;
+  width: 272px;
+  height: 196px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-wrap4 {
+  background-image: url(https://www.annecy.org/resources/interface/vignette_en_images_2017.jpg);
+  background-size: 272px 196px;
+  width: 272px;
+  height: 196px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-wrap5 {
+  background-image: url(https://www.annecy.org/resources/interface/vignette_en_images_2016.jpg);
+  background-size: 272px 196px;
+  width: 272px;
+  height: 196px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-wrap6 {
+  background-image: url(https://www.annecy.org/resources/interface/2015_vignette_en_images.jpg);
+  background-size: 272px 196px;
+  width: 272px;
+  height: 196px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-wrap7 {
+  background-image: url(https://www.annecy.org/resources/interface/vignette_2014_en_images.jpg);
+  background-size: 272px 196px;
+  width: 272px;
+  height: 196px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-wrap8 {
+  background-image: url(https://www.annecy.org/resources/interface/affiche_annecy_2013_260x120.jpg);
+  background-size: 272px 196px;
+  width: 272px;
+  height: 196px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-wrap9 {
+  background-image: url(https://www.annecy.org/resources/interface/affiche_annecy_2012_260x120.jpg);
+  background-size: 272px 196px;
+  width: 272px;
+  height: 196px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-wrap10 {
+  background-image: url(https://www.annecy.org/resources/interface/affiche_annecy_2011_260x120.jpg);
+  background-size: 272px 196px;
+  width: 272px;
+  height: 196px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-wrap11 {
+  background-image: url(https://www.annecy.org/resources/interface/affiche_annecy_2010_260x120.jpg);
+  background-size: 272px 196px;
+  width: 272px;
+  height: 196px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-wrap12 {
+  background-image: url(https://www.annecy.org/resources/interface/affiche_annecy_2009_260x120.jpg);
+  background-size: 272px 196px;
+  width: 272px;
+  height: 196px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content span {
+  color: white;
+}
+
+.content span:nth-child(1) {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.content span:nth-child(2) {
+  font-size: 20px;
+}
+
+#annecy_r {
+  display: flex;
+        justify-content: center;
+}
