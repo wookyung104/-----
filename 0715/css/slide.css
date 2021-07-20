@@ -385,3 +385,18 @@ iframe {
   justify-content: center;
   align-items: center;
 }
+
+.social{
+  margin-left: 25px;
+}
+
+.background-wrap14 {
+  background-image: url( https://www.animationfestival.ca/wp-content/uploads/2021/05/4_BestOf.jpg);
+  background-size: 272px 196px;
+  width: 800px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

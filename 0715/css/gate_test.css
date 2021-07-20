@@ -65,16 +65,16 @@ a:active {text-decoration:none;}
 .bg_img{width: 100%;position:absolute;top:0;left:0;}
 #gateWrap .bg_img > div{width:30.21%;position:absolute;bottom:0;}
 #gateWrap .bg_img > div > div{-ms-transform: matrix(1, 0, 0, 1, 0, 0);-webkit-transform: matrix(1, 0, 0, 1, 0, 0);transform: matrix(1, 0, 0, 1, 0, 0);position: absolute;top: 0;left: 0;bottom: 0;right: 0;}
-#gateWrap .bg_img .adventure .bg_img1{background:url(/0715/img/annecy2.png) no-repeat top center;}
+#gateWrap .bg_img .adventure .bg_img1{background:url(../img/annecy2.png) no-repeat top center;}
 /*#gateWrap .bg_img .adventure .bg_line{background:url(/_img/gate/m01_line.png) repeat-x bottom left}*/
 
-#gateWrap .bg_img .waterpark .bg_img2{background:url(/0715/img/ottawa2.png) no-repeat top center;}
+#gateWrap .bg_img .waterpark .bg_img2{background:url(../img/ottawa2.png) no-repeat top center;}
 /*#gateWrap .bg_img .waterpark .bg_line{background:url(/_img/gate/m04_line.png) repeat-x bottom left}*/
 
-#gateWrap .bg_img .aquarium .bg_img3{background:url(/0715/img/hirosima2.png) no-repeat top center;}
+#gateWrap .bg_img .aquarium .bg_img3{background:url(../img/hirosima2.png) no-repeat top center;}
 /*#gateWrap .bg_img .aquarium .bg_line{background:url(/_img/gate/m03_line.png) repeat-x bottom left}*/
 
-#gateWrap .bg_img .tower .bg_img4{background:url(/0715/img/zagreb2.png) no-repeat top center;}
+#gateWrap .bg_img .tower .bg_img4{background:url(../img/zagreb2.png) no-repeat top center;}
 /*#gateWrap .bg_img .tower .bg_line{background:url(/_img/gate/m02_line.png) repeat-x bottom left}*/
 
 
