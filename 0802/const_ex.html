@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const fnPlus = function(pNum1, pNum2){
+            alert(pNum1+pNum2);
+        }
+        const fnPlus_new = (pNum1, pNum2)=>{
+            alert(pNum1+pNum2);
+        }
+        const fnPlus_new_new = (pNum1, pNum2)=> alert(pNum1+pNum2);
+        const fnone_var = pNum1 => alert(pNum1+1);
+        const fnprint = () => alert("변수가 없군요 !!");
+    </script>
+</head>
+<body>
+    <button onclick="fnPlus(3,7)">신규 표현 방식</button>
+    <button onclick="fnPlus_new(4,8)">화살표 함수 사용 방식</button>
+    <button onclick="fnPlus_new_new(5,10)">키워드 생략 방식</button>
+    <button onclick="fnone_var(5)">매개변수가 1개</button>
+    <button onclick="fnprint()">매개변수가 0개</button>
+</body>
+</html>
