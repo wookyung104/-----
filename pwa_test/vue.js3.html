@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <style>
+        .blue_style{color:blue}
+        .blueviolet_style{color: blueviolet;}
+        .yellow_style{color: darkcyan;}
+        .skyblue_style{color: skyblue;}
+        .purple_style{color: purple;}
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1 v-bind:class="sColorName+ '_style'">{{ sTitle }}</h1>
+    </div>
+
+    <script>
+        var color_array = ["blue", "blueviolet", "yellow", "skyblue", "purple"];
+        var str_array = ["안녕", "곤니치와", "헬로", "사와디캅", "봉쥬르"];
+        new Vue({
+            el: '#main',
+            data:{
+                sColorName: color_array[Rand(0, 5)],
+                sTitle: str_array[Rand(0, 5)]
+            }
+        });
+        function Rand(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min)) +min;
+        }
+    </script>
+</body>
+</html>
