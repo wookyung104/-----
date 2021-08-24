@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <!-- 이벤트 및 데이터 바인딩 -->
+    <div id="app">
+       <form v-on:submit.prevent="submit">
+           <!-- <input type="text" :value="text" @keyup="updateText"><br> -->
+           <input type="text" v-model="text"><br> <!-- v-on:은 @로 대체 가능 -->
+           {{ text }} <br>
+           <button type="submit">submit</button>
+       </form>
+        <!-- onclick에서 on을 빼고 v-on:이 들어가게 됨 -->
+    </div>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                year: 2018,
+                text: 'text'
+            },
+            methods: {
+                plus() {
+                    this.year++;
+                },
+                minus() {
+                    this.year--;
+                },
+                submit() {
+                    alert('submitted');
+                    console.log('hello');
+                },
+                // updateText(event) {
+                //     this.text = event.target.value;
+                // }
+            }
+        })
+    </script>
+</body>
+</html>
