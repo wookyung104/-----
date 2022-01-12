@@ -1,18 +1,24 @@
-// let과 const의 차이는 let은 업데이트 가능
+const calculator = {
+    plus: function(a, b) {
+        return a + b;
+    },
+    minus: function(a, b) {
+        return a - b;
+    },
+    times: function(a, b) {
+        return a * b;
+    },
+    devine: function(a, b) {
+        return a / b;
+    },
+    power: function(a, b) {
+        return a ** b
+    }
+};
 
-const a = 5; 
-let nicoIsFat = true;
+const plusResult = calculator.plus(2, 3);
+const minusResult = calculator.minus(plusResult, 15);
+const timesResult = calculator.times(10, minusResult);
+const devineResult = calculator.devine(timesResult, plusResult);
+const powerResult = calculator.power(devineResult, minusResult);
 
-console.log(a);
-nicoIsFat = false;
-
-
-const toBuy = ["potato", "tamato", "pizza"];
-
-console.log(toBuy);
-toBuy[2] = "water";
-console.log(toBuy);
-
-//push는 추가기능
-toBuy.push("banana");
-console.log(toBuy);
